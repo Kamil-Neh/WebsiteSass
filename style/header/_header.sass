@@ -1,0 +1,18 @@
+.header
+    padding-bottom: 15px
+    max-width: 100%
+    background-color: $header-color
+    @include displayflex(column nowrap,center,center)
+
+    &__block
+        @include displayflex(row nowrap,center,space-around)
+        width: 100%
+
+@media #{$desktop},#{$large-desktop}
+
+    .header
+        @include displayflex(row nowrap,center,space-around)
+        padding: 20px 10px 15px 10px
+
+        &__block
+            @include displayflex(row wrap,center,space-around)
