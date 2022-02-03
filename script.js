@@ -1,16 +1,12 @@
-const menulist= document.querySelector(".menu__list");
-const buttonshow= document.querySelector(".fas.fa-bars");
-const buttonhidden= document.querySelector(".fas.fa-times")
+const menuList = document.querySelector('.menu__list');
+const buttonShow = document.querySelector('.fas.fa-bars');
+const buttonHidden = document.querySelector('.fas.fa-times');
 
-
-buttonshow.addEventListener("click",function(){
-    menulist.style.display= "block";
-    buttonhidden.style.display= "block";
+buttonShow.addEventListener("click",function(){
+    menuList.style.display= "block"
+    buttonHidden.style.display= "block"
 })
-buttonhidden.addEventListener("click",function(){
-    menulist.style.display= "none";
-    buttonhidden.style.display= "none";
+buttonHidden.addEventListener("click",function(){
+    menuList.style.display= "none"
+    buttonHidden.style.display= "none"
 })
-
-
-///i wrote this code for the first time, please on understand :)
