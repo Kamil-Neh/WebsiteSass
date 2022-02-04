@@ -1,0 +1,60 @@
+.menu
+    padding-left: 20px
+
+    &__bars
+        font-size: 22px
+
+    &__list
+        display: none
+        position: fixed
+        background-color: #ffffff
+        height: 100%
+        left: 0
+        top: 0
+        width: 200px
+
+    &__item
+        padding: 22px 10px 20px 10px
+        border-bottom: 1px solid black
+
+    &__link
+        font-size: 26px
+
+    &__link:hover
+        font-weight: bolder
+
+.fas.fa-times
+    transform: translate(60px, -140px)
+    position: fixed
+    z-index: 1
+    display: none
+
+@media #{$desktop},#{$large-desktop}
+    
+    .menu
+
+        &__bars
+            display: none
+
+        &__list
+            position: relative
+            background-color: inherit
+            @include displayflex(row nowrap,center,space-between)
+            gap: 15px
+            width: 100%
+
+        &__item
+            padding: 0
+            border-bottom: none
+        
+        &__link
+            font-size: 15px
+
+@media #{$large-desktop}
+
+        .menu
+
+            &__list
+                gap: 40px
+                padding-left: 20px
+                
