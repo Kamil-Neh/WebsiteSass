@@ -1,0 +1,63 @@
+.product-art
+    width: 100%
+    padding-bottom: 40px
+
+    &__list
+        @include displayflex(row wrap,center,center)
+        gap: 20px
+        margin: auto
+        width: 100%
+
+    &__item
+        @include displayflex(column nowrap,center,center)
+        gap: 20px
+
+    &__square
+      gap: 20px
+      display: flex
+
+.square,.rectangle,.big-square
+    border-radius: 20px
+
+.square
+    width: 160px
+    height: 160px
+        
+.rectangle
+    width: 340px
+    height: 160px
+        
+.big-square
+    width: 340px    
+    height: 370px
+    
+@media #{$tablet}
+    .square
+        width: 200px
+        height: 160px
+            
+
+    .rectangle
+        width: 420px
+        height: 160px
+            
+
+    .big-square
+        width: 420px    
+        height: 340px
+
+@media #{$desktop},#{$large-desktop}     
+    .square
+        width: 240px
+        height: 200px
+        
+
+    .rectangle
+        width: 490px
+        height: 200px
+        
+
+    .big-square
+        width: 500px    
+        height: 420px
+        
