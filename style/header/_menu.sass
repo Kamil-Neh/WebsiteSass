@@ -19,20 +19,19 @@
 
     &__link
         font-size: 26px
+        transition: all 500ms ease-out
 
     &__link:hover
-        font-weight: bolder
+        color: $color-hover      
 
 .fas.fa-times
-    transform: translate(60px, -140px)
+    transform: translate(124px, -140px)
     position: fixed
     z-index: 1
     display: none
 
 @media #{$desktop},#{$large-desktop}
-    
     .menu
-
         &__bars
             display: none
 
@@ -51,10 +50,7 @@
             font-size: 15px
 
 @media #{$large-desktop}
-
-        .menu
-
-            &__list
-                gap: 40px
-                padding-left: 20px
+    .menu__list
+        gap: 40px
+        padding-left: 20px
                 
